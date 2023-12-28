@@ -3,7 +3,7 @@
 Functions are essential tools in R. Functions eliminate repetition from your code, which can reduce your workload, and help you to avoid errors. Here’s what you need to know about creating and calling them and more. It is very important to understand the purpose and syntax of R functions and knowing how to create or use them. In this tutorial, we'll learn what an R function is, what types of functions exist in R, when we should use a function, how to create and call a user-defined function.
 
 ### What Is a Function in R?
-A function in R is an object containing multiple interrelated statements that are run together in a predefined order every time the function is called. Functions in R can be built-in or user-defined. The main purpose of creating a user-defined function is to optimize scripts and avoid repetition. A good practice is creating a function whenever you need to run a certain set of commands more than twice.
+In R, a function is a set of instructions that performs a specific task. Functions are essential for code organization, reusability, and efficiency. R comes with a variety of built-in functions, and you can also create your own custom functions. The main purpose of creating a user-defined function is to optimize scripts and avoid repetition. A good practice is creating a function whenever you need to run a certain set of commands more than twice.
 
 ### Built-in Functions in R
 Some of the most popular built in function are:
@@ -20,7 +20,7 @@ Some of the most popular built in function are:
 -	exists():returns TRUE or FALSE depending on whether or not a variable is defined in the R environment
 
 ### Creating a Function in R
-While applying built-in functions facilitates many common tasks, often we need to create our own function to automate the performance of a particular task. To declare a user-defined function in R, we use the keyword function. The syntax is as follows:
+To create a user-defined function in R, we use the keyword function. The syntax is as follows:
 
   function_name <- function(parameters){
     function body 
@@ -125,8 +125,10 @@ If we pass the arguments by name, i.e., explicitly specify what value each param
   print(subtract_two_nums(y=1, x=3))
 ```
 
-Things to remember when using functions inside other functions: If you want to be able to use the function independent of another function, it should be created outside a function instead of nesting the functions. 
-
-Assessment:
+Things to remember when using functions inside other functions: 
+- Functions can have default values for arguments.
+- Functions can return multiple values using a list or other data structures.
+- You can use the return() statement to specify the value to be returned by the function.
+- If you want to be able to use the function independent of another function, it should be created outside a function instead of nesting the functions. 
 
 (This tutorial utilized https://www.dataquest.io/blog/write-functions-in-r/)

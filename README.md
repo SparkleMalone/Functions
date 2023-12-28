@@ -1,13 +1,11 @@
 # Introduction to writing Functions in R
 
-# This tutorial utilized https://www.dataquest.io/blog/write-functions-in-r/
-
 Functions are essential tools in R. Functions eliminate repetition from your code, which can reduce your workload, and help you to avoid errors. Here’s what you need to know about creating and calling them and more. It is very important to understand the purpose and syntax of R functions and knowing how to create or use them. In this tutorial, we'll learn what an R function is, what types of functions exist in R, when we should use a function, how to create and call a user-defined function.
 
 ### What Is a Function in R?
 A function in R is an object containing multiple interrelated statements that are run together in a predefined order every time the function is called. Functions in R can be built-in or user-defined. The main purpose of creating a user-defined function is to optimize scripts and avoid repetition. A good practice is creating a function whenever you need to run a certain set of commands more than twice.
 
-###Built-in Functions in R
+### Built-in Functions in R
 Some of the most popular built in function are:
 •	min(), max(), mean(), median(): returns the minimum / maximum / mean / median value of a numeric vector
 •	sum(): returns the sum of a numeric vector
@@ -21,17 +19,12 @@ Some of the most popular built in function are:
 •	sort(): sorts a vector in ascending or descending (decreasing=TRUE) order
 •	exists():returns TRUE or FALSE depending on whether or not a variable is defined in the R environment
 
-###Creating a Function in R
+### Creating a Function in R
 While applying built-in functions facilitates many common tasks, often we need to create our own function to automate the performance of a particular task. To declare a user-defined function in R, we use the keyword function. The syntax is as follows:
 
   function_name <- function(parameters){
     function body 
   }
-
-The main components of an R function are: 
-1. function name
-2. function parameters
-3. function body. 
 
 ### 1. Function Name
 This is the name of the function object that will be stored in the R environment. After the function is defined, the function name is used for calling that function. It should be concise but clear and meaningful so that the user who reads our code can easily understand what exactly this function does. It is common to use verbs in function names and it is also ok to use a noun if that noun is very descriptive and unambiguous.
@@ -42,7 +35,7 @@ Function parameters are the variables in the function definition placed inside t
 ### 3. Function Body
 The function body is a set of commands inside the curly braces that are run in a predefined order every time we call the function. In the function body, we place what exactly we need the function to do. For example, we can create a function to sum two numbers listed as parameters x and y: 
 
-```{r}
+```{r, echo=TRUE}
 sum_two_nums <- function(x, y){
     x + y
 }
@@ -54,7 +47,7 @@ print(sum_two_nums(1, 2))
 
 Next, lets create a function to calculate the circumference of a circle with a known radius. The function has only one parameter r. 
 
-```{r}
+```{r, echo=TRUE}
 
   circumference <- function(radius){
     2*pi*radius
@@ -135,3 +128,5 @@ If we pass the arguments by name, i.e., explicitly specify what value each param
 Things to remember when using functions inside other functions: If you want to be able to use the function independent of another function, it should be created outside a function instead of nesting the functions. 
 
 Assessment:
+
+(This tutorial utilized https://www.dataquest.io/blog/write-functions-in-r/)

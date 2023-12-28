@@ -7,17 +7,17 @@ A function in R is an object containing multiple interrelated statements that ar
 
 ### Built-in Functions in R
 Some of the most popular built in function are:
-•	min(), max(), mean(), median(): returns the minimum / maximum / mean / median value of a numeric vector
-•	sum(): returns the sum of a numeric vector
-•	range(): returns the minimum and maximum values of a numeric vector
-•	abs(): returns the absolute value of a number
-•	str(): shows the structure of an R object
-•	print(): displays an R object on the console
-•	ncol(): returns the number of columns of a matrix or a dataframe
-•	length(): returns the number of items in an R object (a vector, a list, etc.)
-•	nchar(): returns the number of characters in a character object
-•	sort(): sorts a vector in ascending or descending (decreasing=TRUE) order
-•	exists():returns TRUE or FALSE depending on whether or not a variable is defined in the R environment
+-	min(), max(), mean(), median(): returns the minimum / maximum / mean / median value of a numeric vector
+-	sum(): returns the sum of a numeric vector
+-	range(): returns the minimum and maximum values of a numeric vector
+-	abs(): returns the absolute value of a number
+-	str(): shows the structure of an R object
+-	print(): displays an R object on the console
+-	ncol(): returns the number of columns of a matrix or a dataframe
+-	length(): returns the number of items in an R object (a vector, a list, etc.)
+-	nchar(): returns the number of characters in a character object
+-	sort(): sorts a vector in ascending or descending (decreasing=TRUE) order
+-	exists():returns TRUE or FALSE depending on whether or not a variable is defined in the R environment
 
 ### Creating a Function in R
 While applying built-in functions facilitates many common tasks, often we need to create our own function to automate the performance of a particular task. To declare a user-defined function in R, we use the keyword function. The syntax is as follows:
